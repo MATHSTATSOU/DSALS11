@@ -4,8 +4,8 @@
 #   A Tutorial with R, JAGS, and Stan. 2nd Edition. Academic Press / Elsevier.
 
 # Optional generic preliminaries:
-graphics.off() # This closes all of R's graphics windows.
-rm(list=ls())  # Careful! This clears all of R's memory!
+#graphics.off() # This closes all of R's graphics windows.
+#rm(list=ls())  # Careful! This clears all of R's memory!
 
 # Load the functions used below:
 source("DBDA2E-utilities.R") # Must be in R's current working directory.
@@ -13,16 +13,7 @@ require(rjags)               # Must have previously installed package rjags.
 
 fileNameRoot="Jags-Paired-2sampleMV-Script" # For output file names.
 
-# Load the data:
-myData = read.csv("CCTS.csv") # Read data file; must be in curr. work. dir.
-ys = myData$STANDARD        # The y values are in the column named ys.
-yn = myData$HUFFMAN
-ydif <- ys - yn
-Ntotal = length(ydif)  # Only using the differences in y values (paired)
-y <- structure(c(ys,yn), .Dim=c(11,2))
 
-
-dataList = list(y = y, Ntotal = Ntotal)
 
 # Define the model:
 modelString = "

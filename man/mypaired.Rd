@@ -4,7 +4,7 @@
 \alias{mypaired}
 \title{My Paired 2 Sample Problem}
 \usage{
-mypaired()
+mypaired(Mydata = ccts)
 }
 \value{
 Jags output
@@ -13,5 +13,5 @@ Jags output
 My Paired 2 Sample Problem
 }
 \examples{
-\dontrun{mypaired()}
+\dontrun{mypaired(Mydata = ccts)}
 }
