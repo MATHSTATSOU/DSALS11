@@ -8,7 +8,7 @@
 #rm(list=ls())  # Careful! This clears all of R's memory!
 
 # Load the functions used below:
-source("DBDA2E-utilities.R") # Must be in R's current working directory.
+#source("DBDA2E-utilities.R", local = TRUE) # Must be in R's current working directory.
 require(rjags)               # Must have previously installed package rjags.
 
 fileNameRoot="Jags-Paired-2sampleMV-Script" # For output file names.
@@ -89,7 +89,8 @@ plotPost( codaSamples[,"mudiff"] ,
           xlab=bquote(mu[S] - mu[H]) ,
           cenTend="mean" , compVal=0 ,
           ROPE=NULL ,
-          credMass=0.95 )
+          credMass=0.95,
+          col = rgb(0.5, 0.4,0, 0.5))
 
 saveGraph( file=paste0(fileNameRoot,"PairedPost2") , type="bmp" )
 

@@ -16,7 +16,7 @@ mypaired <- function(Data){
 
 
   dataList = list(y = y, Ntotal = Ntotal)
-
+  source(system.file("jags/LS11/DBDA2E-utilities.R", package = "DSALS11"),local = TRUE)
   source(system.file("jags/LS11/Jags-PairedSampleScriptMV-wayne.R", package = "DSALS11"),local = TRUE)
 }
 
