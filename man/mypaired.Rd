@@ -6,12 +6,16 @@
 \usage{
 mypaired(Data)
 }
+\arguments{
+\item{Data}{Data frame}
+}
 \value{
 Jags output
 }
 \description{
-My Paired 2 Sample Problem
+This is a sample package to help in the making of functions using JAGS scripts
 }
 \examples{
-\dontrun{mypaired(Data)}
+\dontrun{mypaired(Data = ccts)}
+
 }

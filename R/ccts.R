@@ -1,6 +1,6 @@
-#' Circuits
+#' @title Circuits
 #'
-#' Data on CCTS
+#' @description Data on CCTS
 #'
 #'
 #' @format ##
@@ -9,7 +9,6 @@
 #'   \item{CCTS}{CCT number}
 #'   \item{STANDARD}{0 to 1}
 #'   \item{HUFFMAN}{0 to 1}
-#'   ...
 #' }
 #' @source MS file
 "ccts"
