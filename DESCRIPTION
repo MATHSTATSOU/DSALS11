@@ -3,13 +3,12 @@ Title: Stats functions
 Version: 0.0.0.9000
 Authors@R: 
     person("Wayne", "Stewart", , "wayne.s.stewart@ou.edu", role = c("aut", "cre"),
-           comment = "Stats Lecturer, Director of Master of Applied Statistics")
+           comment = "Stats Lecturer, Program Director of Master of Applied Statistics")
 Description: More STATS applications.
 License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.2.3
-Imports: runjags, rjags, coda
+RoxygenNote: 7.3.2
 URL: https://github.com/MATHSTATSOU/DSALS11
 BugReports: https://github.com/MATHSTATSOU/DSALS11/issues
 Depends: 
