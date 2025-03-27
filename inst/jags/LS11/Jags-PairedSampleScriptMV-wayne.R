@@ -27,7 +27,7 @@ for(i in 1:Ntotal){
 
   mudiff <- mu[1] - mu[2] # What we are interested in
 
-  Omega[1:2, 1:2] ~ dwish(R[,],2) # Wishart distribution
+  Omega[1:2, 1:2] ~ dwish(R[,],3) # Wishart distribution
 
   R[1,1] <- 0.001
   R[1,2] <- 0

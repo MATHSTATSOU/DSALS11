@@ -2,7 +2,7 @@ Package: DSALS11
 Title: Stats functions
 Version: 0.0.0.9000
 Authors@R: 
-    person("Wayne", "Stewart", , "wayne.s.stewart@ou.edu", role = c("aut", "cre"),
+    person("Wayne", "Stewart",, "wayne.s.stewart@ou.edu", role = c("aut", "cre"),
            comment = "Stats Lecturer, Program Director of Master of Applied Statistics")
 Description: More STATS applications.
 License: MIT + file LICENSE
