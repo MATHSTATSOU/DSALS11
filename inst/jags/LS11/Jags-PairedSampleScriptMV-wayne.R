@@ -40,8 +40,8 @@ for(i in 1:Ntotal){
 " # close quote for modelString
 
 #system.file("jags/LS11/Jags-PairedSampleScriptMV-wayne.R", package = "DSALS11")
-writeLines( modelString , con=paste0(system.file(),"/TEMPmodel.txt" ))
-print(paste0(system.file(),"/TEMPmodel.txt" ))
+writeLines( modelString , con="TEMPmodel.txt" )
+
 #writeLines( modelString , con="TEMPmodel.txt" )
 
 initsList <- list(mu = c(0,0),
