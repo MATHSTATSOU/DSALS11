@@ -38,7 +38,11 @@ for(i in 1:Ntotal){
   rho <- Sigma2[1,2]/sqrt(Sigma2[1,1]*Sigma2[2,2])
 }
 " # close quote for modelString
-writeLines( modelString , con="TEMPmodel.txt" )
+
+#system.file("jags/LS11/Jags-PairedSampleScriptMV-wayne.R", package = "DSALS11")
+writeLines( modelString , con=paste0(system.file(),"/TEMPmodel.txt" ))
+print(paste0(system.file(),"/TEMPmodel.txt" ))
+#writeLines( modelString , con="TEMPmodel.txt" )
 
 initsList <- list(mu = c(0,0),
                   Omega = structure(.Data = c(2,0,0,2),

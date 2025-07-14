@@ -4,7 +4,12 @@
 \alias{mylogistic}
 \title{Logistic Regression}
 \usage{
-mylogistic(fname = "HtWtData110.csv", yname = "male", xname = "weight")
+mylogistic(
+  fname = "HtWtData110.csv",
+  yname = "male",
+  xname = "weight",
+  savedsteps = 15000
+)
 }
 \arguments{
 \item{fname}{file name}
@@ -12,6 +17,8 @@ mylogistic(fname = "HtWtData110.csv", yname = "male", xname = "weight")
 \item{yname}{y name}
 
 \item{xname}{x name}
+
+\item{savedsteps}{default 15000}
 }
 \value{
 Jags output

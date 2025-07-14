@@ -10,11 +10,11 @@
 #' @examples
 #' \dontrun{mypaired(Data = ccts)}
 #'
-mypaired <- function(Data){
+mypaired <- function(Data, var1 = "STANDARD",var2 = "HUFFMAN"){
 
 
-  ys = Data$STANDARD  # The y values are in the column named ys.
-  yn = Data$HUFFMAN
+  ys = Data[[var1]]  # The y values are in the column named ys.
+  yn = Data[[var2]]
 
   Ntotal = length(yn)  # Only using the differences in y values (paired)
   y <- structure(c(ys,yn), .Dim=c(Ntotal,2))
