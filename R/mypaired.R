@@ -3,7 +3,8 @@
 #' @description
 #' This is a sample package to help in the making of functions using JAGS scripts
 #' @param Data Data frame
-#'
+#' @param var1 First variable name
+#' @param var2 Second variable name
 #'
 #' @return Jags output
 #' @export

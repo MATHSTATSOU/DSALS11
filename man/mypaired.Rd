@@ -4,10 +4,14 @@
 \alias{mypaired}
 \title{My Paired 2 Sample Problem}
 \usage{
-mypaired(Data)
+mypaired(Data, var1 = "STANDARD", var2 = "HUFFMAN")
 }
 \arguments{
 \item{Data}{Data frame}
+
+\item{var1}{First variable name}
+
+\item{var2}{Second variable name}
 }
 \value{
 Jags output
